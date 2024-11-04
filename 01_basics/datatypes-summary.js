@@ -32,4 +32,28 @@ const myFunction = function() {
     console.log("Hello World");
 }
 
-console.log(typeof bigNumber)
+// console.log(typeof bigNumber)
+
+//********************************* 
+
+// Stack(primitive), heap(non primitive)
+
+let myName = "Manya"
+
+let anotherName = myName
+anotherName = "Manya Sethi" //stack
+
+// console.log(myName);
+// console.log(anotherName);
+
+let userOne = {
+    email: "abc@gmail.com",
+    upi: "user@upi"
+}
+
+let userTwo = userOne
+
+userTwo.email = "manya@gmail.com"
+
+console.log(userOne)
+console.log(userTwo) //heap
